@@ -11,6 +11,8 @@ from cocotb_coverage.coverage import CoverPoint, CoverCross, coverage_db
 
 from models.fifo_model import FifoModel
 
+from crv.seeded_regression import run_crv
+
 WIDTH = 8
 DEPTH = 8
 SEED = 1
@@ -177,5 +179,4 @@ class FifoTester:
 
 @cocotb.test()
 async def test_crv(dut):
-    from crv.seeded_regression import run_crv
-    await run_crv(dut, FifoTester, sample_cov, sample_rst_cov, sample_ptr_cov, coverage_db, DEPTH, SEED, CYCLES)
+    await run_crv(dut)
