@@ -2,6 +2,7 @@
 
 **Members:** Joshua Larenas & Calleb Allen  
 **Repo:** https://github.com/Joshlarenas/V-V-Project-1.git
+
 **Track:** Synchronous FIFO Constrained-Random Verification  
 **Last updated:** November 13, 2026  
 **Project duration:** One week
