@@ -1,7 +1,7 @@
 # Contributions — Project 1 Group 4 · Joshua Larenas & Calleb Allen
 
 **Members:** Joshua Larenas & Calleb Allen  
-**Repo:** [Insert GitHub repository link]  
+**Repo:** https://github.com/Joshlarenas/V-V-Project-1.git 
 **Track:** Synchronous FIFO Constrained-Random Verification  
 **Last updated:** November 13, 2026  
 **Project duration:** One week
