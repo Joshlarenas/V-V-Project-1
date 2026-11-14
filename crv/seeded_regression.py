@@ -5,7 +5,7 @@ import cocotb
 from crv.transactions import FifoTxn
 
 
-async def run_crv(dut, FifoTester, sample_cov, sample_rst_cov, sample_ptr_cov, coverage_db, DEPTH, SEED, CYCLES):
+async def run_crv(dut, FifoTester, sample_cov, sample_rst_cov, sample_wrap_cov, coverage_db, DEPTH, SEED, CYCLES):
     tester = FifoTester(dut)
     await tester.reset()
 
@@ -25,7 +25,7 @@ async def run_crv(dut, FifoTester, sample_cov, sample_rst_cov, sample_ptr_cov, c
             writes = reads = 0
         else:
             sample_cov(count, wr, rd)
-            sample_ptr_cov(writes % DEPTH, reads % DEPTH)
+            sample_wrap_cov(int(writes >= DEPTH), int(reads >= DEPTH))
             if wr and count < DEPTH:
                 writes += 1
             if rd and count > 0:
@@ -36,6 +36,6 @@ async def run_crv(dut, FifoTester, sample_cov, sample_rst_cov, sample_ptr_cov, c
     dut._log.info(f"seed {SEED}, {CYCLES} cycles, {tester.scoreboard.checked} checked")
     coverage_db.report_coverage(dut._log.info, bins=True)
     coverage_db.export_to_yaml(filename=f"coverage_seed{SEED}.yml")
-    for name in ("fifo.occ_x_op", "fifo.rst_occ_x_wr", "fifo.wr_pos", "fifo.rd_pos"):
+    for name in ("fifo.occ_x_op", "fifo.wr_wrapped", "fifo.rd_wrapped"):
         pct = coverage_db[name].cover_percentage
         assert pct == 100, f"seed {SEED}: {name} only {pct:.1f}% covered"

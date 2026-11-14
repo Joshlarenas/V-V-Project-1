@@ -11,12 +11,12 @@ from cocotb_coverage.coverage import CoverPoint, CoverCross, coverage_db
 
 from models.fifo_model import FifoModel
 
-from crv.seeded_regression import run_crv
-
 WIDTH = 8
 DEPTH = 8
 SEED = 1
 CYCLES = 10000
+
+from crv.seeded_regression import run_crv
 
 def op_bin(wr, rd):
     if wr and rd:
@@ -47,14 +47,13 @@ def sample_cov(cnt, wr, rd):
 @CoverPoint("fifo.rst_occ", xf=lambda cnt, wr: occ_bin(cnt),
             bins=["empty", "partial", "full"])
 @CoverPoint("fifo.wr_during_rst", xf=lambda cnt, wr: wr, bins=[0, 1])
-@CoverCross("fifo.rst_occ_x_wr", items=["fifo.rst_occ", "fifo.wr_during_rst"])
 def sample_rst_cov(cnt, wr):
     pass
 
 
-@CoverPoint("fifo.wr_pos", xf=lambda wpos, rpos: wpos, bins=list(range(DEPTH)))
-@CoverPoint("fifo.rd_pos", xf=lambda wpos, rpos: rpos, bins=list(range(DEPTH)))
-def sample_ptr_cov(wpos, rpos):
+@CoverPoint("fifo.wr_wrapped", xf=lambda wr_wrapped, rd_wrapped: wr_wrapped, bins=[1])
+@CoverPoint("fifo.rd_wrapped", xf=lambda wr_wrapped, rd_wrapped: rd_wrapped, bins=[1])
+def sample_wrap_cov(wr_wrapped, rd_wrapped):
     pass
 
 
@@ -179,4 +178,4 @@ class FifoTester:
 
 @cocotb.test()
 async def test_crv(dut):
-    await run_crv(dut)
+    await run_crv(dut, FifoTester, sample_cov, sample_rst_cov, sample_wrap_cov, coverage_db, DEPTH, SEED, CYCLES)
