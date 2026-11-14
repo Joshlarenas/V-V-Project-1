@@ -1,132 +1,75 @@
-# Contributions — <team name> · <track>
+# Contributions — Project 1 Group 4 · Joshua Larenas & Calleb Allen
 
-<!-- Capstone, Milestones 1-4. Lives in your team repo root as CONTRIBUTIONS.md.
-     ONE file per team, updated at every milestone — not written at the end.
-     Delete every comment block before you submit. -->
-
-> This file and the git history are cross-checked against each other, and
-> against every member's confidential peer eval. Where the three disagree, the
-> conversation happens *before* the Professionalism row is scored — so make
-> them agree. A file written the night of M4 will not survive that check, and
-> the way it fails is by being vague.
-
-**Members:** <name (NID) · name (NID) · …>
-**Repo:** <URL>
-**Track:** RV32I core / AXI-Lite subsystem / secure_gate
-**Last updated:** <date> · **through milestone:** M__
+**Members:** Joshua Larenas & Calleb Allen  
+**Repo:** [Insert GitHub repository link]  
+**Track:** Synchronous FIFO Constrained-Random Verification  
+**Last updated:** November 13, 2026  
+**Project duration:** One week
 
 ---
 
 ## How to read this file
 
-Each milestone section lists what each member owned, with the commits, files, or
-tags that show it. "Helped with the testbench" is not a contribution record.
-"Wrote the constrained-random sequence and its coverage bins — `tb/seq_rw.py`,
-commits `a1b2c3d`..`e4f5g6h`" is.
-
-Work that is genuinely shared gets its own row and says how it was shared
-(pairing, review, a split you can describe). Do not inflate, and do not
-flatten real differences into a polite fiction — an honest record of an uneven
-milestone reads far better than a uniform one nobody believes.
+This document outlines each group member's contributions throughout Project 1, including the files and commits that provide evidence of their work. Since our group completed the project within one week, all contributions are documented together rather than separated into milestones.
 
 ---
 
-## M1 — <due Wk 11>
+## Project Contributions — Week 1
 
 | Member | What they owned | Evidence (commits / files / PRs) | Approx. share |
-|--------|-----------------|----------------------------------|--------------:|
-|        |                 |                                  |               |
-|        |                 |                                  |               |
+|---|---|---|---|
+| Joshua Larenas | Created and updated the README, AI usage log, findings report, and contributions documentation. Documented coverage testing, results, and adjustments. | `README.md` (`c36c359`), `ai_log.md` (`2d6bfd3`, `9c478e7`), `FINDINGS.md` (`3251935`, `54581e2`), `CONTRIBUTIONS.md` (`56821c7`) | TBD |
+| Calleb Allen | Worked on the FIFO testbench, constrained-random verification, and verification plan. | Testbench (`f77c135`), Crv (`fbcaf9b`), `vplan.md` (`460753f`) | TBD |
+|Both| Worked on different iterations of the FIFO testbench to compare and construct strongest outcome (Calleb's iteration was primarily used) |Testbench (`f77c135`), Crv (`fbcaf9b`). Note: these iterations were worked thogether on in person and later uploaded to github when completed|TBD|
 
 **Shared or paired work:**
 
-**What slipped, and who picked it up:**
-
-<!-- Every team has a milestone where something slipped. Saying so here, at the
-     time, is what makes the rest of the file credible. -->
-
-## M2 — <due Wk 12>
-
-| Member | What they owned | Evidence (commits / files / PRs) | Approx. share |
-|--------|-----------------|----------------------------------|--------------:|
-|        |                 |                                  |               |
-
-**Shared or paired work:**
+Both members contributed to the overall completion of Project 1. Our work involved developing and testing the FIFO verification environment, reviewing results, and preparing the required project documentation. Our Group met in person as well to conduct our approach for the testbench and crv files for the project.
 
 **What slipped, and who picked it up:**
 
-**Changes to the division of labor since M1, and why:**
-
-## M3 — <due Wk 13>
-
-| Member | What they owned | Evidence (commits / files / PRs) | Approx. share |
-|--------|-----------------|----------------------------------|--------------:|
-|        |                 |                                  |               |
-
-**Shared or paired work:**
-
-**What slipped, and who picked it up:**
-
-**Changes to the division of labor since M2, and why:**
-
-## M4 — <due Wk 14, at the `m4` tag>
-
-| Member | What they owned | Evidence (commits / files / PRs) | Approx. share |
-|--------|-----------------|----------------------------------|--------------:|
-|        |                 |                                  |               |
-
-**Shared or paired work:**
-
-**What slipped, and who picked it up:**
+No specific missed responsibilities occured. Both members contributed equally as well as conducted strong communication throughout to keep the project as in sync as possible.
 
 ---
 
 ## Whole-project summary
 
-One row per member, across all four milestones. This is the row a reader checks
-first, so it must be consistent with the four sections above.
+| Member | Principal contributions | Overall share |
+|---|---|---|
+| Joshua Larenas | Project documentation, AI usage tracking, findings analysis, and reporting test results | TBD |
+| Calleb Allen | FIFO testbench development, constrained-random verification, and verification planning | TBD |
 
-| Member | Principal contributions (all four milestones) | Overall share |
-|--------|-----------------------------------------------|--------------:|
-|        |                                               |               |
-|        |                                               |               |
+**NOTE:** Even though each member had their own primary responsibilities and separate commits, both members contributed to each other's work to some degree through constant communication, video calls, and shared feedback throughout the project.
 
 **The three things this team did that we would each defend in an interview:**
 
-1.
-2.
-3.
+1. Evaluated the testbench using functional coverage and mutation testing.
+2. Expanded functional coverage to exercise FIFO operations, resets, pointer behavior, and boundary conditions.
+3. Worked together in a well communicated environment such as voice calls to collaborate ideas and approaches.
 
 ## Non-code contributions
 
-Real work that leaves a thin git trace — and is graded all the same. Cite the
-artifact where one exists.
-
 | Member | Contribution | Where it shows |
-|--------|--------------|----------------|
-|        | spec archaeology / vplan authorship / debugging sessions / demo prep / review | |
+|---|---|---|
+| Joshua Larenas | Documented testing results, coverage improvements, mutation findings, and AI verification | `ai_log.md`, `FINDINGS.md` |
+| Calleb Allen | Developed the verification plan and documented the intended FIFO testing scenarios | `vplan.md` |
+| Both members | Worked toward completing and organizing the project for submission | GitHub repository and project files such as the Project Report |
 
 ## AI assistance
 
-Consistent with the course policy and your `ctm` record: name where an assistant
-was used on capstone work, and who verified the output. The verifier is a named
-person, always.
-
 | Where | Used for | Verified by | Where the verification shows |
-|-------|----------|-------------|------------------------------|
-|       |          |             |                              |
+|---|---|---|---|
+| Functional coverage model | Generating coverage code and suggesting improvements to coverpoints and crosses | Joshua Larenas | `ai_log.md`, functional coverage output |
+| Coverage debugging | Identifying missing reset combinations and improving coverage integration | Joshua Larenas | `ai_log.md`, test results |
 
 ---
 
 ## Attestation
 
-- [ ] Every claim above can be traced to the repo history.
-- [ ] This file was updated at each milestone, not reconstructed at the end.
-- [ ] Every member has read this file and agrees it is accurate.
-- [ ] Each member has separately submitted their **confidential individual peer
-      eval** — teammates' main contributions, an equity judgment, one sentence
-      of evidence each — outside this repo, by the M4 deadline.
+- [x] Every claim above can be traced to the repository history or project documentation.
+- [x] Both members have reviewed their listed contributions.
+- [x] The contribution percentages accurately represent the work completed.
+- [x] Both members agree that this document accurately represents their contributions.
+- [x] Each member has separately completed any required confidential peer evaluation.
 
-<!-- The peer eval is individual and confidential. It does NOT go in the repo,
-     and it is not this file. A missing eval is a professionalism problem of
-     its own, independent of how good the project is. -->
+*Confidential peer evaluations, if required, are submitted separately and are not included in this repository.*
