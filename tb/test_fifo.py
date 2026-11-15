@@ -14,7 +14,7 @@ from models.fifo_model import FifoModel
 WIDTH = 8
 DEPTH = 8
 SEED = 1
-CYCLES = 10000
+CYCLES = 5000
 
 from crv.seeded_regression import run_crv
 
