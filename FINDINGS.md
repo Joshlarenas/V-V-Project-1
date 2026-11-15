@@ -1,4 +1,4 @@
-# FINDINGS — Project 1 · Joshua Larenas & Calleb Allen
+# FINDINGS — Project 1 · Joshua Larenas & Caleb Allen
 
 The mutation score represents how many faulty FIFO implementations our testbench was able to detect out of the total tested. Functional coverage measures how many of our defined testing scenarios were exercised. Both results help evaluate our testbench's effectiveness, but neither guarantees that every possible fault can be detected.
 
