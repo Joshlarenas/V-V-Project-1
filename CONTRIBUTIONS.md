@@ -1,6 +1,6 @@
-# Contributions — Project 1 Group 4 · Joshua Larenas & Calleb Allen
+# Contributions — Project 1 Group 4 · Joshua Larenas & Caleb Allen
 
-**Members:** Joshua Larenas & Calleb Allen  
+**Members:** Joshua Larenas & Caleb Allen  
 **Repo:** https://github.com/Joshlarenas/V-V-Project-1.git
 
 **Track:** Synchronous FIFO Constrained-Random Verification  
@@ -20,8 +20,8 @@ This document outlines each group member's contributions throughout Project 1, i
 | Member | What they owned | Evidence (commits / files / PRs) | Approx. share |
 |---|---|---|---|
 | Joshua Larenas | Created and updated the README, AI usage log, findings report, and contributions documentation. Documented coverage testing, results, and adjustments. | `README.md` (`c36c359`), `ai_log.md` (`2d6bfd3`, `9c478e7`), `FINDINGS.md` (`3251935`, `54581e2`), `CONTRIBUTIONS.md` (`56821c7`) | TBD |
-| Calleb Allen | Worked on the FIFO testbench, constrained-random verification, and verification plan. | Testbench (`f77c135`), Crv (`fbcaf9b`), `vplan.md` (`460753f`) | TBD |
-|Both| Worked on different iterations of the FIFO testbench to compare and construct strongest outcome (Calleb's iteration was primarily used) |Testbench (`f77c135`), Crv (`fbcaf9b`). Note: these iterations were worked thogether on in person and later uploaded to github when completed|TBD|
+| Caleb Allen | Worked on the FIFO testbench, constrained-random verification, and verification plan. | Testbench (`f77c135`), Crv (`fbcaf9b`), `vplan.md` (`460753f`) | TBD |
+|Both| Worked on different iterations of the FIFO testbench to compare and construct strongest outcome (Caleb's iteration was primarily used) |Testbench (`f77c135`), Crv (`fbcaf9b`). Note: these iterations were worked thogether on in person and later uploaded to github when completed|TBD|
 
 **Shared or paired work:**
 
@@ -38,7 +38,7 @@ No specific missed responsibilities occured. Both members contributed equally as
 | Member | Principal contributions | Overall share |
 |---|---|---|
 | Joshua Larenas | Project documentation, AI usage tracking, findings analysis, and reporting test results | TBD |
-| Calleb Allen | FIFO testbench development, constrained-random verification, and verification planning | TBD |
+| Caleb Allen | FIFO testbench development, constrained-random verification, and verification planning | TBD |
 
 **NOTE:** Even though each member had their own primary responsibilities and separate commits, both members contributed to each other's work to some degree through constant communication, video calls, and shared feedback throughout the project.
 
@@ -53,7 +53,7 @@ No specific missed responsibilities occured. Both members contributed equally as
 | Member | Contribution | Where it shows |
 |---|---|---|
 | Joshua Larenas | Documented testing results, coverage improvements, mutation findings, and AI verification | `ai_log.md`, `FINDINGS.md` |
-| Calleb Allen | Developed the verification plan and documented the intended FIFO testing scenarios | `vplan.md` |
+| Caleb Allen | Developed the verification plan and documented the intended FIFO testing scenarios | `vplan.md` |
 | Both members | Worked toward completing and organizing the project for submission | GitHub repository and project files such as the Project Report |
 
 ## AI assistance
